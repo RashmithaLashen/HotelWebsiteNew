@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookingstyle.css">
+
+ <script src="main3.js" defer></script>
+ </head>
+ <body id="body2">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="black-logo-p (1).jpg" class="logo-style" alt="Logo">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="branches.html">BRANCHES</a></li>
+                        <li><a href="adventures.html">ADVENTURES</a></li>
+                        <li><a href="restaurants.html">RESTAURANTS</a></li>
+                        <li><a href="booking.html">HOTEL BOOKING & ADVENTURES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="bookcol1">
+    <form class="allformsClass">
+    <h2>Rooms</h2>
+    <fieldset class="personalInfoClass">
+
+    <br><br><label for="personName">Name : </label>
+    <input type="text" id="Name" placeholder="Enter Full Name" required><br><br>
+
+    <label for="gender">Gender : </label>
+    <select name="genber" id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select><br><br><br>
+    
+    </fieldset>
+
+    <fieldset>
+
+    <p>
+    <input type="radio" name="roomType" id="single" value="single" >
+    <label class="classroomType" for="single">Single</label>
+    <input type="radio" name="roomType" id="double" value="double" >
+    <label class="classroomType" for="double">Double</label>
+    <input type="radio" name="roomType" id="triple" value="triple" >
+    <label class="classroomType" for="triple">Triple</label><br><br>
+    <label class="numofRooms">Number of Rooms :</label>
+    <input type="number" min="1" max="20" name="roomType" id="numRooms" value="1" class="duration"><br><br>
+    <input type="checkbox" name="roomType" id="extraBed" value="extrabed">
+    <label for="extraBed"> Extra Bed </label>
+    </p>
+    </fieldset>
+    <fieldset>
+        <br><br>
+    <p>
+    <label class="adultsNum" for="adultsnumber">Number of Adults : </label> 
+    <input type="number" name="mealsNum" id="numAdults" class="adultsnumber" min="1" value="1" max="6" required> <br><br><br>
+    <label class="childrenNum" for="childrenNumber">Number of young Children: </label>
+    <input type="number" name="mealsNum" id="youngchildren" class="childrenNumber" min="0" value="0"> <br><br><br>
+    <label class="childrenNum" for="childrenNumber">Number of Children: </label>
+    <input type="number" name="mealsNum" id="childrenabove5" class="childrenNumber" min="0" value="0"><br><br>
+    
+    </fieldset>
+    <fieldset>
+
+        <br><br><p>
+    <label class="duration" for="checkIn">Check-In : </label>
+    <input type="date" id="checkIn" name="duration" required>
+    <label class="duration" for="checkOut">Check-Out : </label>
+    <input type="date" id="checkOut" name="duration"required>
+    <span>
+    <label id="numofDays">Number of Days</label>
+    </span>
+    </p><br><br>
+    </fieldset>
+    <fieldset>
+        <br><br>
+    <p class="extrareqclass">
+    <label class="wificlass">WIFI</label>
+    <input type="checkbox" name="extrareq" id="wifi" value="wifi">
+    </p>
+
+    <p class="extrareqclass">
+    <label class="extrareqlbl">Pool View</label>
+    <input type="radio" name="extrareq" id="poolview" value="poolview">
+    <label class="extrareqlbl2">Garden View</label>
+    <input type="radio" name="extrareq" id="gardenview" value="gardenview">
+    </p><br><br>
+    </fieldset><br><br>
+
+
+
+    <fieldset>
+
+    <p ><br><br>
+    <label for="promocode">Promo Code : </label>
+    <input type="text" id="promocode">
+    </p><br><br>
+    </fieldset>
+    <fieldset >
+
+    <p id="currentCostOutput"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    <p id="output4"></p>
+    <p id="output5"></p>
+    <p id="output6"></p>
+    <p id="output7"></p>
+    </fieldset><br><br>
+    <fieldset class="btnClass"><br><br>
+    
+    <button type="button" id="bookButton">Book Now</button>
+    <button type="button" id="checkFav">Look at Your Favourite</button>
+    <button type="button" id="resetForm">Reset entries</button>
+    <button type="button" id="checkLoyaltyBtn">Check Loyalty points</button><br><br>
+    </fieldset>
+    </form>
+    <br><br>
+    <form>
+    <h2>Adventure</h2>
+    <fieldset class="personalInfoClass1"><br><br>
+
+    <label for="personName">Name : </label>
+    <input type="text" id="Name2" class="personName"  required><br><br>
+
+    <label for="gender">Gender : </label>
+    <select name="genber" id="gender2" class="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select><br><br><br>
+
+    </fieldset>
+
+    <fieldset class="advbookFldset">
+
+    <label class="guideselection" for="localadults">Adventure</label><br><br>
+    <p>
+    <label class="adventure" for="">Diving - local Adults </label>
+    <input type="checkbox" name="adventure" id="localadults" value="localAdults">
+    </p>
+    <p>
+    <label class="adventure" for="localkids">Diving - local kids </label>
+    <input type="checkbox" name="adventure" id="localkids" value="locakkids"> 
+    </p><br><br>
+    <p>
+    <label class="adventure" for="foreignadults">Diving - foreign adults </label>
+    <input type="checkbox" name="adventure" id="foreignadults" value="foreignadults">
+    </p>
+    <p>
+    <label class="adventure" for="foreignkids">Diving -foreign kids</label>
+    <input type="checkbox" name="adventure" id="foreignkids" value="foreignkids">
+    </p><br><br>
+    <label class="guideselection">Diving guide requirements</label>
+    <p>
+    <label class="adultsguideclass" for="adultsguide">Adult</label>
+    <input type="checkbox" name="divinguide" id="adultsguide" value="adultsguide">
+    </p>
+    <p>
+    <label class="adultsguideclass" for="kidsguide">Kids </label>
+    <input type="checkbox" name="divinguide" id="kidsguide" value="kidsguide">
+    </p>
+    </fieldset><br><br>
+    <fieldset class="btnClass2">
+
+    <button type="button" id="advBookBtn">Book Adventure</button>
+    <button type="button" id="advresetForm">Reset Form</button>
+    <button type="button" id="advcheckFav">Check Favourite</button>
+    </fieldset> 
+    </form>
+
+    
+    </div>
+    <div class="outputDiv" id="popup">
+    <fieldset id="outputFieldset">
+    <legend>Total</legend>
+    <p id="popusdetails"></p>
+    <button type="button" id="continueBtn" onclick="continueFunction()">Continue</button>
+    <button type="button" id="favButton" onclick="addfavFunction()">Add to Favorites</button>
+    </fieldset>
+    </div>
+    <div class="outputpopup2" id="popup2">
+    <h3>Added To Favorites!</h3>
+    <p>
+    The order was added! Thank You.
+    </p>
+    <button type="button" id="closeBtn">Close</button>
+    </div>
+    <div class="outputpopup3" id="popup3">
+    <p id="loyaltyoutput"></p>
+    <button type="button" id="closeBtn2">Close</button>
+    </div>
+    <br><br>
+  <footer>
+        <h2>All Rights Reserved 2023</h2>
+    </footer>
+ </body>
+</html>
